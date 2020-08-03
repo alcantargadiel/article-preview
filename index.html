@@ -74,30 +74,51 @@
         
         .user {
             width: 349.297px;
-            height: 60px;
+            height: auto;
             padding: 0px 48px;
             display: flex;
         }
         
-        .user h3 {
-            font-size: 12px;
+        .user-info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .user-info-rigth {
+            width: 100%;
+            display: flex;
+        }
+        
+        .user-name h3 {
+            font-size: 13px;
             margin: 0;
             margin-bottom: 3px;
             color: var(--very-dark-grayish-blue);
             font-weight: 600;
         }
         
-        .user p {
+        .user-name p {
             font-size: 13px;
             margin: 0;
             color: var(--grayish-blue);
         }
         
-        .user>img {
+        .user-avatar>img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             margin-right: 15px;
+        }
+        
+        .share-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--light-grayish-blue);
+            align-items: center;
+            justify-content: center;
+            display: flex;
         }
     </style>
 </head>
@@ -111,12 +132,26 @@
                     <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
             </div>
             <div class="user">
-                <img src="images/avatar-michelle.jpg" alt="Avatar">
+
                 <div class="user-info">
-                    <h3>Michelle Appleton</h3>
-                    <p>28 Jun 2020</p><span class="share">
-                        <img src="/images/icon-share.svg" alt="Share Icon">
-                    </span>
+                    <div class="user-info-rigth">
+                        <div class="user-avatar">
+                            <img src="images/avatar-michelle.jpg" alt="Avatar">
+                        </div>
+                        <div class="user-name">
+                            <h3>Michelle Appleton</h3>
+                            <p>28 Jun 2020</p>
+                        </div>
+                    </div>
+                    <div class="user-info-left">
+                        <div class="share-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                                <path fill="#6E8098"
+                                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                                </svg>
+                        </div>
+                    </div>
+
                 </div>
 
 
