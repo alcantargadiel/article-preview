@@ -132,10 +132,10 @@
         }
         
         .social-icons-bar {
-            width: 248px;
+            width: 0px;
             height: 55px;
             background: var(--very-dark-grayish-blue);
-            display: flex;
+            display: none;
             left: auto;
             margin: auto;
             position: fixed;
@@ -238,22 +238,22 @@
         </div>
     </div>
     <script>
-        function toggleIcons() {
-            let getIconsBar = document.getElementById('social-icons-bar');
-            if (getIconsBar.style.display === 'none') {
-                getIconsBar.style.display = 'flex';
-            } else {
-                getIconsBar.style.display = 'none';
-            }
-        }
         // function toggleIcons() {
-        //     if (getIconsBar.style.width = "0px") {
-        //         getIconsBar.style.width = "248px";
-        //         getIconsBar.style.display = "flex";
+        //     let getIconsBar = document.getElementById('social-icons-bar');
+        //     if (getIconsBar.style.display === 'none') {
+        //         getIconsBar.style.display = 'flex';
         //     } else {
-        //         getIconsBar.style.width = "0px";
+        //         getIconsBar.style.display = 'none';
         //     }
-        // };
+        // }
+        function toggleIcons() {
+            if (getIconsBar.style.width = "0px") {
+                getIconsBar.style.width = "248px";
+                getIconsBar.style.display = "flex";
+            } else {
+                getIconsBar.style.width = "0px";
+            }
+        };
     </script>
 </body>
 
