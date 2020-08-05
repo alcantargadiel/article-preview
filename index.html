@@ -249,32 +249,11 @@
         </div>
     </div>
     <script>
-        // function toggleIcons() {
-        //     let getIconsBar = document.getElementById('social-icons-bar');
-        //     if (getIconsBar.style.display === 'flex') {
-        //         getIconsBar.style.display = 'none';
-        //     } else {
-        //         getIconsBar.style.display = 'flex';
-        //     }
-        // }
-
-        // function toggleIcons() {
-        //     let getIconsBar = document.getElementById('social-icons-bar');
-        //     if (getIconsBar.style.display === 'flex') {
-        //         getIconsBar.style.display = 'none';
-        //         getIconsBar.style.height = '0px';
-        //     } else {
-        //         getIconsBar.style.display = 'flex';
-        //         getIconsBar.style.height = '55px';
-        //     }
-        // }
-
-
         var toggle = document.getElementById("share-btn");
-        var content = document.getElementById("social-icons-bar");
+        var getIconsBar = document.getElementById("social-icons-bar");
 
         toggle.addEventListener("click", function() {
-            content.classList.toggle("appear");
+            getIconsBar.classList.toggle("appear");
         }, false);
     </script>
 </body>
