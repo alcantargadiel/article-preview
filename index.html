@@ -238,9 +238,10 @@
         </div>
     </div>
     <script>
+        let getIconsBar = document.getElementById('social-icons-bar');
+        getIconsBar.style.transition = "all 2s";
+
         function toggleIcons() {
-            let getIconsBar = document.getElementById('social-icons-bar');
-            getIconsBar.style.transition = "all 2s"
             if (getIconsBar.style.display === 'none') {
                 getIconsBar.style.display = 'flex';
             } else {
