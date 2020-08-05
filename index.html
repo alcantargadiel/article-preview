@@ -240,13 +240,20 @@
     <script>
         let getIconsBar = document.getElementById('social-icons-bar');
 
+        // function toggleIcons() {
+        //     if (getIconsBar.style.display === 'none') {
+        //         getIconsBar.style.display = 'flex';
+        //     } else {
+        //         getIconsBar.style.display = 'none';
+        //     }
+        // }
         function toggleIcons() {
-            if (getIconsBar.style.display === 'none') {
-                getIconsBar.style.display = 'flex';
+            if (getIconsBar.style.width = "0%") {
+                getIconsBar.style.width = "100%";
             } else {
-                getIconsBar.style.display = 'none';
+                getIconsBar.style.width = "0%";
             }
-        }
+        };
     </script>
 </body>
 
