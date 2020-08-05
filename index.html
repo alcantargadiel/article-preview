@@ -120,6 +120,7 @@
             justify-content: center;
             display: flex;
             cursor: pointer;
+            transition: .3s;
         }
         
         .share-btn:hover {
@@ -141,6 +142,8 @@
             border-radius: 9px;
             transform: translate(553px, 131px);
             z-index: 99;
+            display: none;
+            transition: .3s;
         }
         
         .social-icons-bar::after {
@@ -196,7 +199,7 @@
                         </div>
                     </div>
                     <div class="user-info-left">
-                        <div class="share-btn">
+                        <div class="share-btn" onclick="toggleIcons()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                                 <path fill="#6E8098"
                                     d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
@@ -210,7 +213,7 @@
             </div>
 
         </div>
-        <div class="social-icons-bar">
+        <div class="social-icons-bar" id="social-icons-bar">
             <div class="social-icons">
                 <p>SHARE</p>
                 <a href="#" target="_blank">
@@ -234,7 +237,16 @@
             </div>
         </div>
     </div>
-
+    <script>
+        function toggleIcons() {
+            let getIconsBar = document.getElementById('social-icons-bar');
+            if (getIconsBar.style.display === none) {
+                getIconsBar.style.display = flex;
+            } else {
+                getIconsBar.style.display = none;
+            }
+        }
+    </script>
 </body>
 
 </html>
