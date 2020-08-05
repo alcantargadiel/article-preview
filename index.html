@@ -245,6 +245,17 @@
                 getIconsBar.style.display = 'flex';
             }
         }
+
+        function toggleIcons() {
+            let getIconsBar = document.getElementById('social-icons-bar');
+            if (getIconsBar.style.display === 'flex') {
+                getIconsBar.style.display = 'none';
+                getIconsBar.style.height = '0px';
+            } else {
+                getIconsBar.style.display = 'flex';
+                getIconsBar.style.height = '55px';
+            }
+        }
     </script>
 </body>
 
