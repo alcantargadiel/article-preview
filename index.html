@@ -198,6 +198,38 @@
             padding-top: 5px;
             padding-right: 18px;
         }
+        
+        @media only screen and (max-width: 375px) {
+            .main-container {
+                flex-wrap: wrap;
+                width: 328px;
+                height: 511px;
+                position: relative;
+            }
+            .img-container {
+                background-size: cover;
+                height: 42%;
+            }
+            .preview-body {
+                display: grid;
+                height: auto;
+                flex: 1;
+                grid-gap: 3px;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-rows: 200px 93px;
+            }
+            .content {
+                padding-left: 30px;
+                padding-right: 27px;
+            }
+            .content h3 {
+                font-size: 16px;
+            }
+            .user {
+                padding-left: 27px;
+                padding-right: 27px;
+            }
+        }
     </style>
 </head>
 
