@@ -185,8 +185,9 @@ body {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 13px;
     text-align: center;
+    margin-top: 2%;
 }
 
 .attribution a {
