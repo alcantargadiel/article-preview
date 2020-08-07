@@ -211,12 +211,12 @@
                 height: 42%;
             }
             .preview-body {
-                display: grid;
-                height: auto;
+                display: block;
+                height: 296px;
                 flex: 1;
-                grid-gap: 3px;
+                /* grid-gap: 3px;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                grid-template-rows: 200px 93px;
+                grid-template-rows: 200px 93px; */
             }
             .content {
                 padding-left: 30px;
@@ -227,8 +227,18 @@
             }
             .user {
                 width: auto;
+                margin-top: 18px;
                 padding-left: 27px;
                 padding-right: 27px;
+            }
+            .share-btn {
+                position: relative;
+                z-index: 99;
+            }
+            .social-icons-bar {
+                position: absolute;
+                top: 85%;
+                height: 77px;
             }
         }
         
