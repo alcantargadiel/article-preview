@@ -8,194 +8,18 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Frontend Mentor | Article preview component</title>
+    <title>Frontend Mentor | Article preview component | Coded by Gadiel Alcántar</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-         :root {
-            --very-dark-grayish-blue: hsl(217, 19%, 35%);
-            --desaturated-dark-blue: hsl(214, 17%, 51%);
-            --grayish-blue: hsl(212, 23%, 69%);
-            --light-grayish-blue: hsl(210, 46%, 95%);
-            --white-color: #ffffff;
-            --font-family: 'Manrope', sans-serif;
-        }
-        
-        body {
-            background-color: var(--light-grayish-blue);
-            font-family: var(--font-family);
-        }
-        
-        .main-container {
-            box-sizing: border-box;
-            display: flex;
-            position: absolute;
-            margin: auto;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            border-radius: 12px;
-            width: 730px;
-            height: 280px;
-            overflow: hidden;
-            background-color: var(--white-color);
-            background-image: url(images/drawers.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            -webkit-box-shadow: -1px 1.3rem 3rem -15px hsl(214deg 22% 70%);
-            box-shadow: -1px 1.3rem 3rem -15px hsl(214deg 22% 70%);
-        }
-        
-        .preview-body {
-            height: 100%;
-            width: 61%;
-            background-color: var(--white-color);
-            position: inherit;
-            right: inherit;
-        }
-        
-        .content {
-            padding: 12px 48px 8px 48px;
-        }
-        
-        .content h3 {
-            color: var(--very-dark-grayish-blue);
-            letter-spacing: 0.5px;
-            font-weight: 700;
-            margin-top: 26.72px;
-            margin-bottom: 0px;
-        }
-        
-        .content p {
-            font-size: 13px;
-            line-height: 20px;
-            color: var(--desaturated-dark-blue);
-        }
-        
-        .user {
-            width: 349.297px;
-            height: auto;
-            padding: 0px 48px;
-            display: flex;
-        }
-        
-        .user-info {
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-        
-        .user-info-rigth {
-            width: 100%;
-            display: flex;
-        }
-        
-        .user-name h3 {
-            font-size: 13px;
-            margin: 0;
-            margin-bottom: 3px;
-            color: var(--very-dark-grayish-blue);
-            font-weight: 600;
-        }
-        
-        .user-name p {
-            font-size: 13px;
-            margin: 0;
-            color: var(--grayish-blue);
-        }
-        
-        .user-avatar>img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        
-        .share-btn {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: var(--light-grayish-blue);
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            cursor: pointer;
-            transition: .3s;
-        }
-        
-        .share-btn:hover {
-            background: var(--very-dark-grayish-blue);
-        }
-        
-        .share-btn:hover svg path {
-            fill: var(--white-color);
-        }
-        
-        .social-icons-bar {
-            width: 248px;
-            height: 55px;
-            background: var(--very-dark-grayish-blue);
-            display: flex;
-            visibility: hidden;
-            left: auto;
-            margin: auto;
-            position: fixed;
-            border-radius: 9px;
-            transform: translate(553px, 131px);
-            z-index: 99;
-            transition: 0.3s;
-            -webkit-transition: 0.3s;
-            opacity: 0;
-            -webkit-box-shadow: -1px 1.3rem 1rem -15px hsl(214deg 22% 70%);
-            box-shadow: -1px 1.3rem 1rem -15px hsl(214deg 22% 70%);
-            /* transform: translateY(-100%); */
-            /* -webkit-transform: translateX(-100%); */
-        }
-        
-        .social-icons-bar.appear {
-            opacity: 1;
-            visibility: visible;
-            /* transform: translateX(0); */
-            /* -webkit-transform: translateX(0); */
-        }
-        
-        .social-icons-bar::after {
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 0;
-            left: 103px;
-            bottom: -12px;
-            border-left: 12px solid transparent;
-            border-right: 12px solid transparent;
-            border-top: 12px solid var(--very-dark-grayish-blue);
-        }
-        
-        .social-icons {
-            display: flex;
-            align-items: center;
-            padding: 13px 26px;
-        }
-        
-        .social-icons p {
-            color: var(--grayish-blue);
-            letter-spacing: 0.3em;
-            font-size: 13px;
-            padding-right: 22px;
-        }
-        
-        .social-icons a {
-            padding-top: 5px;
-            padding-right: 18px;
-        }
-    </style>
 </head>
 
 <body>
 
     <div class="main-container">
+        <div class="img-container">
+
+        </div>
         <div class="preview-body">
             <div class="content">
                 <h3>Shift the overall look and feel by adding these wonderfull touches to furniture in your home</h1>
@@ -252,14 +76,7 @@
             </div>
         </div>
     </div>
-    <script>
-        var toggle = document.getElementById("share-btn");
-        var getIconsBar = document.getElementById("social-icons-bar");
-
-        toggle.addEventListener("click", function() {
-            getIconsBar.classList.toggle("appear");
-        }, false);
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
