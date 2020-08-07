@@ -198,13 +198,16 @@
             padding-top: 5px;
             padding-right: 18px;
         }
+        /*====== Media Queries =======*/
         
         @media only screen and (max-width: 768px) {
             .main-container {
                 flex-wrap: wrap;
-                width: 328px;
+                /* width: 328px; */
                 height: 511px;
                 position: relative;
+                width: auto;
+                margin: 78px 16px;
             }
             .img-container {
                 background-size: cover;
@@ -244,19 +247,6 @@
                 transform: translate(0px, 0px);
             }
         }
-        
-        @media only screen and (max-width: 768px) {
-            .main-container {
-                width: auto;
-                margin: 78px 16px;
-            }
-        }
-        /* @media only screen and (max-width: 500px) {
-            .user-info-rigth {
-                display: none;
-            }
-        }
-         */
         
         @media only screen and (max-width: 400px) {
             .main-container {
